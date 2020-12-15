@@ -1,0 +1,22 @@
+<h1>
+    {{#data}}
+    {{this.Username}}'s Collection
+    <br>
+    {{/data}}
+
+  
+</h1>
+<style>
+    img {
+
+      width: 100%;
+    }
+  </style> 
+{{#each files}}
+<div class ="image">
+  
+<img src="image/{{this.filename}}">
+
+</div>
+
+{{/each}}

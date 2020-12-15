@@ -1,0 +1,18 @@
+
+<h1>
+    {{#data}}
+    {{this.Username}}'s Groups
+    <br>
+    {{/data}}
+</h1>
+<form action="/indexhomephotos" method="post" >
+<p>
+{{#users}}
+<input type="checkbox" name = "Name" value="{{this.Groups}}">
+<label for="Name">{{this.Groups}}</label>
+<br>
+
+{{/users}}
+<button type="submit">Submit!</button>
+</p>
+</form>

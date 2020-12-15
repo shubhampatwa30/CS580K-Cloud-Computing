@@ -1,0 +1,19 @@
+<form action= "/create_g" method = "post">
+    <p>
+        <label>Group Name</label><input value="" name="Name" Name/>
+        <br>
+        <br>
+        {{#members}}
+        <input type="checkbox" name = "Members" value="{{this.Username}}">
+        <label for="member">{{this.Username}}</label>
+        <br>
+        {{/members}}
+        <br>
+        <br>
+        <button type="submit">Submit!</button>
+
+
+
+    </p>
+
+</form>

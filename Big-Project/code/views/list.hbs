@@ -1,0 +1,21 @@
+<h1>
+    {{#data}}
+    Welcome {{this.Username}}
+    <br>
+    {{/data}}
+</h1>
+<form action="/upload" method="POST" enctype="multipart/form-data">
+          <div class="custom-file mb-3">
+            <input type="file" name="file" id="file" class="custom-file-input">
+            <label for="file" class="custom-file-label">Choose File</label>
+          </div>
+          <input type="submit" value="Submit" class="btn btn-primary btn-block">
+        </form>
+
+<hr>
+
+<button><h1><a href="/displayCollection" >Open Collection</a></h1></button> <br>
+<button><h1><a href="/searchGroup" >Search Group</a></h1></button> <br>
+<button><h1><a href="/createGroup" >Create Group</a></h1></button> <br>
+
+<hr>
